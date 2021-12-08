@@ -25,5 +25,4 @@ docker run -it --rm --name mock-agent -e MQ_USER=guest -e MQ_PASSWORD=guest \
 
 You can bind mount the `-v /path/on/your/machine/my-replies:/go/bin/mock-replies` and place your own replies in that folder. Right now, it only replies with one of the files but future plans will reply based on the request.
 
-
-`MQ_RESPONSE_CHANNEL` overrides where the agent sends responses to jobs
+`MQ_RESPONSE_CHANNEL` overrides where the agent sends responses to jobs (used for debugging)
