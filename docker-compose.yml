@@ -1,13 +1,14 @@
 version: "3.8"
 services:
   mock-agent:
+    #build: .
     image: "$DOCKER_REGISTRY/mock-agent:$API_VERSION"
     restart: unless-stopped
     environment:
       - MQ_HOST=host.docker.internal
       - MQ_PORT=5672
-      - MQ_USERNAME="$MQ_USERNAME"
-      - MQ_PASSWORD="$MQ_PASSWORD"
+      - MQ_USERNAME=$MQ_USERNAME
+      - MQ_PASSWORD=$MQ_PASSWORD
     # You can override the builtin replies
     #volumes:
     #  - ./mock-replies:/go/bin/mock-replies
