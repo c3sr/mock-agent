@@ -2,7 +2,7 @@ module mock-agent
 
 go 1.15
 
-require github.com/c3sr/dlframework v1.4.5
+require github.com/c3sr/dlframework v1.4.10
 
 //replace (
 //	github.com/c3sr/dlframework => ./dlframework
@@ -24,7 +24,6 @@ require (
 	github.com/c3sr/cmd v1.0.0 // indirect
 	github.com/c3sr/config v1.0.1 // indirect
 	github.com/c3sr/database v1.0.0 // indirect
-	github.com/c3sr/dldataset v0.0.0-20211114224851-8db5b79de012 // indirect
 	github.com/c3sr/go-echarts v1.0.0 // indirect
 	github.com/c3sr/go-python3 v0.0.0-20210424014611-ae173b2e6908 // indirect
 	github.com/c3sr/joefriday v1.0.0 // indirect
