@@ -10,7 +10,7 @@ WORKDIR /go/src/github.com/c3sr/mock-agent
 
 # Handle Go Depedencies and cache it as a layer
 COPY go.mod go.mod
-COPY dlframework/go.mo? dlframework/
+#COPY dlframework/go.mo? dlframework/
 RUN go mod download
 
 # Get the rest of the project in

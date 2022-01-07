@@ -22,7 +22,7 @@ if [ ! -f "$DOCKERFILE" ]; then
     die_with_message "Dockerfile ${DOCKERFILE} does not exist"
 fi
 
-docker build -t "$REGISTRY/mock-agent:$VERSION" --file "$DOCKERFILE"
+docker build -t "$REGISTRY/mock-agent:$VERSION" --file "$DOCKERFILE" .
 docker tag "$REGISTRY/mock-agent:$VERSION" "$REGISTRY/mock-agent:latest"
 
 cleanup_and_exit
