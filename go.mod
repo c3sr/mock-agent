@@ -2,7 +2,7 @@ module mock-agent
 
 go 1.15
 
-require github.com/c3sr/dlframework v1.4.10
+require github.com/c3sr/dlframework v1.4.13
 
 //replace (
 //	github.com/c3sr/dlframework => ./dlframework
